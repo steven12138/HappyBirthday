@@ -15,9 +15,8 @@ let countDown = new Date('Oct 08, 2020 00:00:00').getTime(),
             document.getElementById('seconds').innerText = Math.floor((distance % (minute)) / second);
 
         //do something later when date is reached
-        //if (distance < 0) {
-        //  clearInterval(x);
-        //  'IT'S MY BIRTHDAY!;
-        //}
+        if (distance < 0) {
+            window.location="./birthday.html"
+        }
 
     }, second)
